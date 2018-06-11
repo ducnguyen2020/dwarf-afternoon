@@ -1,10 +1,12 @@
 import React, {Component} from 'react'
 
+import RealmText from './RealmText'
+
 class Realm extends React.Component{
     render(){
         return(
             <div className="small-12 columns other-articles">
-            <h2>From around the Realm</h2>
+            <RealmText />
             <div className="small-6 medium-3 columns other-article">
               <a href="#">
                 <img src="https://www.enclavepublishing.com/wp-content/uploads/2015/11/tumblr_inline_mtvwr6T4qH1r8eb4v.gif" alt="orc" />
