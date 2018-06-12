@@ -4,19 +4,38 @@ import Comment from './Comment'
 
 class Article_links extends React.Component{
 
-    fct(ev){
-      ev.preventDefault()
-      console.log('aba')
-      document.querySelector(".cmtForm").style.display = "block"
+    constructor(){
+      super()
+      this.state ={
+        isVisible : "inline",
+        comments : [],
+        newComment : null,
+      }
+
     }
+
+
+    makeVisible(ev){
+      ev.preventDefault()
+      if (this.state.isVisible === "inline"){
+            this.setState({
+              isVisible : "none" 
+            })
+          }
+      else {
+        this.setState({
+          isVisible : "inline" 
+        })
+      }
+      document.querySelector('.cmtForm').style.display = this.state.isVisible
+    }
+
 
     render(){
         return(
             <div className="article-links">
-              <form className ="cmtForm" >
-                  <input type="text" placeholder="Write your comment here"/>Comment
-              </form>
-              <a className="article-link" href= "#" onClick = {this.fct.bind(this)}>
+              <Comment />
+              <a className="article-link" href= "#" onClick = {this.makeVisible.bind(this)}>
                 <i className="fa fa-comments-o"></i>
                 <span className="article-link-text">Comments</span>
               </a>

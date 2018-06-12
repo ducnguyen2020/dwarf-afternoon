@@ -260,6 +260,8 @@ body {
     display: none;
   }
   
-  
-  
-  
+  #subBut{
+    height:50px;
+    width: 80px;
+    border: solid red;
+  }
