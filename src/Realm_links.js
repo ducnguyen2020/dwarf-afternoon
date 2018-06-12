@@ -26,14 +26,6 @@ class Realm_links extends React.Component{
                 </a>,
             ],
             
-            para: [
-                "Single Orcs in Indianapolis",
-                "You won't believe what's under this mountain",
-                "Mine 20% more gold with One Weird Trick",
-                "Surprise for Indiana Hobbits born before 1999",
-            ],
-
-
         }
     }
 

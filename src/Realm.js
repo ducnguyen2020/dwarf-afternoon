@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-import RealmText from './RealmText'
+
 import Realm_links from './Realm_links'
 
 class Realm extends React.Component{

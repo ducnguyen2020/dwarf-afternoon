@@ -256,7 +256,9 @@ body {
     display: inline-block;
   }
   
-  
+  .cmtForm{
+    display: none;
+  }
   
   
   
