@@ -31,6 +31,7 @@ class Comment extends React.Component{
         const comments = [...this.state.comments];
         comments.push(cmt);
         this.setState({comments});
+        document.querySelector("#comm").value='';
     }
 
     render(){
